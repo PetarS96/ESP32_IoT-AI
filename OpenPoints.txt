@@ -1,0 +1,7 @@
+- Instal PlatformIO (check if its used for ESP32)
+- Connect local repo with github
+- Figure out project folder structure
++ Create HW architecutre
+- Figure out SW architecture (tasks in OS ect...)
+- @ decorator python
+_________________________________________________________
