@@ -70,6 +70,13 @@ def create_structure(base_path, structure):
             print(f"Created folder: {path}")
             # Recursively create subfolders and files
             create_structure(path, content)
+        elif isinstance(content, list):
+            # Create files in the list
+            for file_name in content:
+                file_path = os.path.join(base_path, file_name)
+                with open(file_path, "w") as file:
+                    file.write("")
+                print(f"Created file: {file_path}")
         else:
             # Create file
             with open(path, "w") as file:
